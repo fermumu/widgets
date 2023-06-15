@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets/config/menu/menu_items.dart';
-import 'package:widgets/presentations/screem/bottons/botton_screem.dart';
 
 class HomeScreem extends StatelessWidget {
   const HomeScreem({Key? key}) : super(key: key);
@@ -59,7 +59,8 @@ class _CostomListTitle extends StatelessWidget {
         //     builder: (context) => const BottonsScreen(),
         //   ),
         // );
-        Navigator.pushNamed(context, menuItem.link);
+        // Navigator.pushNamed(context, menuItem.link);
+        context.push(menuItem.link);
       },
     );
   }
